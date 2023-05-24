@@ -1,0 +1,10 @@
+﻿@page "/editorde"
+@using BootstrapBlazor.Components
+
+<h3>Editor German</h3>
+
+<Editor @bind-Value="@EditorValue" IsEditor="true" ShowSubmit="false" Language="de-DE" />
+
+@code {
+    private string? EditorValue { get; set; }
+}
