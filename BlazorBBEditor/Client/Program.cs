@@ -18,15 +18,15 @@ builder.Services.AddBootstrapBlazor( localizationConfigure: op =>
         typeof( App ).Assembly
     };
 } );
-builder.Services.Configure<BootstrapBlazor.Components.BootstrapBlazorOptions>( op =>
-{
-    op.DefaultCultureInfo = "de-DE";
-    op.FallbackCulture = "de-DE";
-    op.SupportedCultures = new List<string> { "de-DE", "en-US" };
-} );
+//builder.Services.Configure<BootstrapBlazor.Components.BootstrapBlazorOptions>( op =>
+//{
+//    op.DefaultCultureInfo = "de-DE";
+//    op.FallbackCulture = "de-DE";
+//    op.SupportedCultures = new List<string> { "de-DE", "en-US" };
+//} );
 
-var culture = new CultureInfo( "de-DE" );
-CultureInfo.DefaultThreadCurrentCulture = culture;
-CultureInfo.DefaultThreadCurrentUICulture = culture;
+//var culture = new CultureInfo( "de-DE" );
+//CultureInfo.DefaultThreadCurrentCulture = culture;
+//CultureInfo.DefaultThreadCurrentUICulture = culture;
 
 await builder.Build().RunAsync();
